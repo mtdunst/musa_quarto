@@ -25,7 +25,7 @@ website:
       - href: index.qmd
         text: Welcome
       - about.qmd
-      - section: "Philadelphia Quizzo"
+      - section: landing_page.ipynb
         contents:
             - Methods.qmd
             - analysis/Philadelphia Quizzo.ipynb

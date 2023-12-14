@@ -152,5 +152,12 @@
     "title": "The Methods",
     "section": "",
     "text": "Data is collected through a means more sophisticated than downloading (e.g. scraping, API).\n\nWe used the Foursquare API to get the addresses of the bars with Quizzos\nWe web-scraped data on Quizzo locations from a local news website\n\nThe analysis of the data is reasonably complex, involving multiple steps (geospatial joins/operations, data shaping, data frame operations, etc).\n\nWe joined our data set of Quizzo locations with our API address results\n\nThe analysis of the data is reasonably complex, involving multiple steps (geospatial joins/operations, data shaping, data frame operations, etc).\n\nWe spatially joined our data to neighborhoods data, then grouped and summarize by that category to get statistics by area\n\nThe project includes a deployed Panel dashboard.\n\nWe have two Panel dashboards allowing users to change what type of bar chart they see and a map showing Quizzo locations in the neighborhood of their choice"
+  },
+  {
+    "objectID": "landing_page.html",
+    "href": "landing_page.html",
+    "title": "Explore Philadelphia’s Quizzo Bars!",
+    "section": "",
+    "text": "Make this Notebook Trusted to load map: File -&gt; Trust Notebook"
   }
 ]
