@@ -1,0 +1,18 @@
+---
+title: "The Methods"
+---
+---
+
+- Data is collected through a means more sophisticated than downloading (e.g. scraping, API).
+    - *We used the Foursquare API to get the addresses of the bars with Quizzos*
+    - *We web-scraped data on Quizzo locations from a local news website*
+
+- The analysis of the data is reasonably complex, involving multiple steps (geospatial joins/operations, data shaping, data frame operations, etc). 
+    - *We joined our data set of Quizzo locations with our API address results*
+
+- The analysis of the data is reasonably complex, involving multiple steps (geospatial joins/operations, data shaping, data frame operations, etc). 
+    - *We spatially joined our data to neighborhoods data, then grouped and summarize by that category to get statistics by area*
+
+- The project includes a deployed Panel dashboard.
+    - *We have two Panel dashboards allowing users to change what type of bar chart they see and a map showing Quizzo locations in the neighborhood of their choice*
+

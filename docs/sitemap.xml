@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://musa-550-fall-2023.github.io/quarto-website-template/about.html</loc>
-    <lastmod>2023-12-14T21:06:51.014Z</lastmod>
+    <lastmod>2023-12-14T21:11:52.509Z</lastmod>
   </url>
   <url>
     <loc>https://musa-550-fall-2023.github.io/quarto-website-template/analysis/4-folium.html</loc>
@@ -34,6 +34,10 @@
   </url>
   <url>
     <loc>https://musa-550-fall-2023.github.io/quarto-website-template/analysis/Philadelphia Quizzo.html</loc>
-    <lastmod>2023-12-14T21:04:43.099Z</lastmod>
+    <lastmod>2023-12-14T21:14:56.614Z</lastmod>
+  </url>
+  <url>
+    <loc>https://musa-550-fall-2023.github.io/quarto-website-template/Methods.html</loc>
+    <lastmod>2023-12-14T21:19:27.616Z</lastmod>
   </url>
 </urlset>
