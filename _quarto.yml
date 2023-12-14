@@ -42,7 +42,7 @@ website:
           - analysis/2-static-images.ipynb
           - analysis/3-altair-hvplot.ipynb
           - analysis/4-folium.ipynb
-          - Final_Project_1211.ipynb
+          - analysis/Final_Project_1211.ipynb
 
 format:
   html:
