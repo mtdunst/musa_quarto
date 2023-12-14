@@ -1,30 +1,21 @@
 ---
-title: "MUSA 550 Final Project Template"
-subtitle: "An example website demonstrating the power of Quarto for sharing analyses on the web"
+title: "Analyzing Philly's Quizzo Bars"
+subtitle: "MUSA 550 Final Project"
 ---
 
 ## Welcome!
 
-We can create beautiful websites that describe complex technical analyses in Python using [Quarto](https://quarto.org) 
-and deploy them online using [GitHub Pages](https://pages.github.com/). This combination of tools is a really powerful way 
-to create and share your work. This website is a demo that is meant to be used to create your own Quarto website for the 
-final project in MUSA 550. 
+![](images/62ffc6d7c0ad7.webp){height=3in}
 
-Quarto is a relatively new tool, but is becoming popular quickly. It's a successor 
-to the Rmarkdown ecosystem that combines functionality into a single tool and also extends its computation power to other
-languages. Most importantly for us, Quarto supports executing Python code, allowing us to convert Jupyter notebooks to HTML and share them online.  
+Group Members: Brooke Acosta, Michael Dunst, Sofia Fasullo
 
-::: {.callout-important}
-This template site, including the layout it uses, is just a suggested place to start! For your final project, you're welcome (and encouraged) to 
-make as many changes as you like to best fit your project.
-:::
+### Research Question
 
-## Find out more
+Which Quizzo locations are closest to the user based on location and day of week selected. 
 
-The code for this repository is hosted on our course's GitHub page: [https://github.com/MUSA-550-Fall-2023/quarto-website-template](https://github.com/MUSA-550-Fall-2023/quarto-website-template).
+### The Approach
 
-We covered the basics of getting started with Quarto and GitHub Pages in week 9. Take a look at
-[the slides for lecture 9A](https://musa-550-fall-2023.github.io/content/week-9/lecture-9A.html) to find out more.
+We will be creating a dataset that includes Quizzo locations in Philadelphia, night of week that Quizzo is available at each location, and neighborhood.  We will use this data to create an interactive dashboard that the public can filter through and use to find Quizzo locations nearest to them on their desired date.
 
 
 
