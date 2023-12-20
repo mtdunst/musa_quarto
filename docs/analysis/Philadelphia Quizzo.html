@@ -181,7 +181,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#map-of-all-philadelphia-quizzo-bars" id="toc-map-of-all-philadelphia-quizzo-bars" class="nav-link active" data-scroll-target="#map-of-all-philadelphia-quizzo-bars">Map of all Philadelphia Quizzo Bars</a></li>
   <li><a href="#density-of-quizzo-bars-per-neighborhood" id="toc-density-of-quizzo-bars-per-neighborhood" class="nav-link" data-scroll-target="#density-of-quizzo-bars-per-neighborhood">Density of Quizzo Bars Per Neighborhood</a></li>
-  <li><a href="#summary-statistics-of-quizzo-bars-in-philadelphia" id="toc-summary-statistics-of-quizzo-bars-in-philadelphia" class="nav-link" data-scroll-target="#summary-statistics-of-quizzo-bars-in-philadelphia">Summary Statistics of Quizzo Bars in Philadelphia</a></li>
+  <li><a href="#summary-statistics-of-quizzo-bars-in-philadelphia" id="toc-summary-statistics-of-quizzo-bars-in-philadelphia" class="nav-link" data-scroll-target="#summary-statistics-of-quizzo-bars-in-philadelphia">Summary Statistics of Quizzo Bars in Philadelphia</a>
+  <ul class="collapse">
+  <li><a href="#for-an-interactive-version-visit-httpshuggingface.cospacessofiafasulloquizzo_python_project" id="toc-for-an-interactive-version-visit-httpshuggingface.cospacessofiafasulloquizzo_python_project" class="nav-link" data-scroll-target="#for-an-interactive-version-visit-httpshuggingface.cospacessofiafasulloquizzo_python_project">For an interactive version, visit: https://huggingface.co/spaces/SofiaFasullo/quizzo_python_project</a></li>
+  </ul></li>
   <li><a href="#what-quizzos-are-in-my-neighborhood" id="toc-what-quizzos-are-in-my-neighborhood" class="nav-link" data-scroll-target="#what-quizzos-are-in-my-neighborhood">What Quizzos are in my Neighborhood?</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/MUSA-550-Fall-2023/quarto-website-template/blob/main/analysis/Philadelphia Quizzo.ipynb" class="toc-action">View source</a></p></div></div></nav>
@@ -435,7 +438,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-tags="[]" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load the google sheets of quizzos</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>quizzos <span class="op">=</span> pd.read_csv(<span class="st">"./Quizzos.csv"</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>quizzos</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>quizzos.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
 <div>
 
@@ -730,7 +733,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-tags="[]" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># join to bars dataset</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>quizzo_bars <span class="op">=</span> quizzos.join(bars_gdf, lsuffix<span class="op">=</span><span class="st">"_left"</span>, rsuffix<span class="op">=</span><span class="st">"_right"</span>)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>quizzo_bars</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>quizzo_bars.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <div>
 
@@ -2456,6 +2459,8 @@ if (window.Jupyter !== undefined) {
 </section>
 <section id="summary-statistics-of-quizzo-bars-in-philadelphia" class="level2">
 <h2 class="anchored" data-anchor-id="summary-statistics-of-quizzo-bars-in-philadelphia">Summary Statistics of Quizzo Bars in Philadelphia</h2>
+<section id="for-an-interactive-version-visit-httpshuggingface.cospacessofiafasulloquizzo_python_project" class="level3">
+<h3 class="anchored" data-anchor-id="for-an-interactive-version-visit-httpshuggingface.cospacessofiafasulloquizzo_python_project">For an interactive version, visit: <a href="https://huggingface.co/spaces/SofiaFasullo/quizzo_python_project">https://huggingface.co/spaces/SofiaFasullo/quizzo_python_project</a></h3>
 <div class="cell" data-tags="[]" data-execution_count="35">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the dashboard - code from lecture 9B</span></span>
@@ -2694,6 +2699,7 @@ if (window.Jupyter !== undefined) {
 <span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># IMPORTANT: set the height!</span></span>
 <span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pn.pane.plot.Folium(m, height<span class="op">=</span><span class="dv">600</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
 </section>
 <section id="what-quizzos-are-in-my-neighborhood" class="level2">
 <h2 class="anchored" data-anchor-id="what-quizzos-are-in-my-neighborhood">What Quizzos are in my Neighborhood?</h2>
